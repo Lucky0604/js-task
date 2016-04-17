@@ -7,8 +7,9 @@ var src = document.getElementById('source');
 var oLi = src.getElementsByTagName('li');
 console.log(oLi[1].childNodes[1].innerHTML);
 console.log(oLi[1].innerHTML.slice(0,2));
+var oData = [];
 function getData() {
-    var oData = [];
+
     // 获取城市名
     for (var i = 0; i < oLi.length; i ++) {
         var data = []
@@ -19,4 +20,11 @@ function getData() {
     console.log(oData);
     return oData;
 }
-getData();
+
+function sortAqiData(oData) {
+    getData();
+    for (var key in oData) {
+        console.log(key)
+    }
+}
+sortAqiData(oData);
