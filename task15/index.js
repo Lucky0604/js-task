@@ -23,8 +23,8 @@ function getData() {
 
 function sortAqiData(oData) {
     getData();
-    for (var key in oData) {
-        console.log(key)
+    for (var key of oData) {
+        console.log(key);
     }
 }
 sortAqiData(oData);
