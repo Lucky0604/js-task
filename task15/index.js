@@ -21,10 +21,21 @@ function getData() {
     return oData;
 }
 
+/**
+ * sortAqiData
+ * 按空气质量对data进行从小到大的排序
+ * 返回一个排序后的数组
+ */
 function sortAqiData(oData) {
-    getData();
-    for (var key of oData) {
-        console.log(key);
-    }
+    return data.sort(function(a, b) {
+        return a[1] - b[1];
+    })
 }
-sortAqiData(oData);
+
+/**
+ * render
+ * 将排好序的城市及空气质量指数，输出显示到id位resort的列表中
+ * 格式见ul中的注释的部分
+ */
+function render(data) {
+}
