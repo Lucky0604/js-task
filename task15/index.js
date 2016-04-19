@@ -38,4 +38,10 @@ function sortAqiData(oData) {
  * 格式见ul中的注释的部分
  */
 function render(data) {
+    var pos = ['一', '二', '三', '四', '五', '六', '七'];
+    var str = '';
+    data.forEach(function(value, index) {
+        str += '<li>第' + pos[index] + '名：' + value[0] + '空气质量:<b>' + value[1] + '</b></li>';
+    });
+    document.getElementById('resort').innerHTML;
 }
