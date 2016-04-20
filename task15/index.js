@@ -45,3 +45,17 @@ function render(data) {
     });
     document.getElementById('resort').innerHTML;
 }
+
+
+function btnHandle() {
+    getData();
+    aqiData = sortAqiData(aqiData));
+    render(aqiData);
+}
+
+function init() {
+    // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+    document.getElementById('sort-btn').addEventListener('click', btnHandle);
+}
+
+init();
