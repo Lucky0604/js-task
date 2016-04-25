@@ -43,7 +43,7 @@ function render(data) {
     data.forEach(function(value, index) {
         str += '<li>第' + pos[index] + '名：' + value[0] + '空气质量:<b>' + value[1] + '</b></li>';
     });
-    document.getElementById('resort').innerHTML;
+    document.getElementById('resort').innerHTML = str;
 }
 
 
