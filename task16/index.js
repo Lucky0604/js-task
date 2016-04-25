@@ -17,6 +17,16 @@ function addAqiData() {
     // 通过.value属性获取input的值
     var cityValue = city.value;
     var scoreValue = aqiValue.value;
+
+    // 增加判断
+    if(!cityValue.match(/^[A-Za-z\u4E00-\u9FA5]+$/)){
+        alert("城市名必须为中英文字符！")
+        return;
+    }
+    if(!scoreValue.match(/^\d+$/)) {
+        alert("空气质量指数必须为整数！")
+        return;
+    }
     // cityValue为对象属性，scoreValue为对象属性值
     aqiData[cityValue] = scoreValue;
 }
