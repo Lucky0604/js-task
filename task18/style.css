@@ -1,0 +1,14 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    float: left;
+    width: 30px;
+    height: 20px;
+    background: red;
+    margin-left: 10px;
+    text-align: center;
+    color: #fff;
+}
